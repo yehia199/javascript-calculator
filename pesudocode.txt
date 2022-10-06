@@ -1,2 +1,1 @@
-select all the important elements from the dom
-onclick on any button change the text content of the calculator display to the clicked number
+selectelements;

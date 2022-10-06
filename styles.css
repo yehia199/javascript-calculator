@@ -6,6 +6,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 .container {
+    background-color: rgba(37, 34, 29, 0.555);
     width: 350px;
     height: 500px;
     display: grid;
@@ -13,22 +14,44 @@ body {
     grid-auto-rows: minmax(1fr, auto);
     grid-gap: 1rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    border: 5px rgb(80, 58, 29) solid;
+    border: 2px rgb(80, 58, 29) solid;
     border-radius: 10px;
     padding: 25px;
 }
 
 #Equal-btn {
   grid-column: span 2;
+  padding: 10px;
+  background-color: rgb(155, 220, 85);
+  border-style: none;
+  border-radius: 1rem;
+  transition: all 200ms ease-in-out;
+  font-size: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 
 .output {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    color: white;
+    background-color: rgb(230, 216, 184);
+    /*box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;*/
     grid-column: span 4;
-    border: 2px  rgb(80, 58, 29) solid;
+    border-style: none;
     border-radius: 10px;
     padding: 30px;
+    font-size: 2rem;
+}
+.calculations {
+    color: white;
+    background-color: rgb(230, 216, 184);
+    /*box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;*/
+    grid-column: span 4;
+    border-style: none;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 2rem;
+    margin-bottom: 0px;
+    display: none;
 }
 .operations {
     display: flex;
@@ -36,8 +59,17 @@ body {
     grid-gap: 0.5rem;
     
 }
-
+.AC, .del {
+    padding: 10px;
+    background-color: rgb(220, 179, 85);
+    border-style: none;
+    border-radius: 1rem;
+    transition: all 200ms ease-in-out;
+    font-size: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px; 
+}
 .nums {
+    color: rgba(37, 34, 29, 0.555);
     padding: 10px;
     background-color: rgb(230, 216, 184);
     border-style: none;
@@ -66,4 +98,8 @@ body {
 button {
     color: white;
     font-weight: 700;
+}
+#Equal-btn:hover {
+    background-color: rgb(98, 220, 85);
+    border-radius: 5px;
 }
