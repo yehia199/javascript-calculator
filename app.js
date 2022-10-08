@@ -66,7 +66,7 @@ function clickingOperators() {
                     
               //  }
             }
-            firstNumber = calculations.textContent;
+            firstNumber = Number(calculations.textContent);
             console.log(firstNumber)
             operatorType = operator.textContent;
             calculations.textContent = '';
@@ -76,11 +76,6 @@ function clickingOperators() {
         })
     })
 }
-
-
-
-
-
 
 function operate() {
     equal.addEventListener('click', () => {
