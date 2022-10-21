@@ -10,6 +10,7 @@ let secondNumber = 0;
 let operatorType = '';
 let isTheOperatorClicked = false;
 let result = 0;
+let dot = document.querySelector('#dot')
 
 function AC() {
     Ac.addEventListener('click', (e) => {
@@ -67,9 +68,10 @@ function clickingOperators() {
                     secondNumber = 0;
                     calculations.textContent = result;
                 }
-                //if (calculations.textContent = result) {
-                    
-              //  }
+            }
+            if (secondNumber == 0 && operatorType == '/') {
+                alert('you can not divide by zero')
+                window.location.reload()
             }
             firstNumber = Number(calculations.textContent);
             console.log(firstNumber)
@@ -105,8 +107,17 @@ function operate() {
             secondNumber = 0;
             output.textContent = result;
         }
+        if (secondNumber == 0 && operatorType == '/') {
+            alert('you can not divide by zero')
+            window.location.reload()
+        } 
+        if (calculations.textContent === 'NaN') {
+            alert('syntax error !!!')
+            window.location.reload()
+        }
     })
 }
+
 displayNums()
 clickingOperators()
 operate()
