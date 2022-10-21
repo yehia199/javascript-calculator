@@ -11,6 +11,11 @@ let operatorType = '';
 let isTheOperatorClicked = false;
 let result = 0;
 
+function AC() {
+    Ac.addEventListener('click', (e) => {
+        window.location.reload();
+    })
+}
 function displayNums() {
     numbers.forEach((number) => {
         number.addEventListener('click', () => {
@@ -105,3 +110,4 @@ function operate() {
 displayNums()
 clickingOperators()
 operate()
+AC()
