@@ -69,8 +69,8 @@ function clickingOperators() {
                     calculations.textContent = result;
                 }
             }
-            if (secondNumber == 0 && operatorType == '/') {
-                alert('you can not divide by zero')
+            if (calculations.textContent === 'NaN' || calculations.textContent === 'Infinity') {
+                alert('error !!! you put something wrong')
                 window.location.reload()
             }
             firstNumber = Number(calculations.textContent);
@@ -107,12 +107,9 @@ function operate() {
             secondNumber = 0;
             output.textContent = result;
         }
-        if (secondNumber == 0 && operatorType == '/') {
-            alert('you can not divide by zero')
-            window.location.reload()
-        } 
-        if (calculations.textContent === 'NaN') {
-            alert('syntax error !!!')
+
+        if (calculations.textContent === 'NaN' || calculations.textContent === 'Infinity') {
+            alert('error !!! you put something wrong')
             window.location.reload()
         }
     })
