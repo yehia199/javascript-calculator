@@ -53,7 +53,7 @@ body {
     padding: 30px;
     font-size: 2rem;
     margin-bottom: 0px;
-   /* display: none;*/
+    display: none;
 }
 .operations {
     display: flex;
@@ -61,7 +61,8 @@ body {
     grid-gap: 0.5rem;
     
 }
-.AC, .del {
+.AC {
+    grid-column: span 2;
     padding: 10px;
     background-color: #3a3a3a;
     border-style: none;
