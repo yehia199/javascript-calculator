@@ -13,7 +13,7 @@ let result = 0;
 let dot = document.querySelector('#dot')
 
 function AC() {
-  Ac.addEventListener('click', (e) => {
+  Ac.addEventListener('click', () => {
     this.location.reload();
   })
 }
